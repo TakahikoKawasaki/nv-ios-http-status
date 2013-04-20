@@ -27,6 +27,7 @@
  * HTTP status codes.
  *
  * The list here is based on the description at Wikipedia.
+ * The initial version of this list was written on April 20, 2013.
  *
  * @see <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes"
  *      >List of HTTP status codes</a>
