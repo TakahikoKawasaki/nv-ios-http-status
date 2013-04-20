@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'nv-ios-http-status' target in the 'nv-ios-http-status' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
