@@ -19,4 +19,34 @@
 
 @implementation nv_ios_http_status
 
++ (BOOL)isInformational:(NSUInteger)statusCode {
+
+    NSRange informationRange = NSMakeRange(200, 100);
+    return NSLocationInRange(statusCode, informationRange);
+}
+
++ (BOOL)isSuccess:(NSUInteger)statusCode {
+
+    NSRange successRange = NSMakeRange(200, 100);
+    return NSLocationInRange(statusCode, successRange);
+}
+
++ (BOOL)isRedirection:(NSUInteger)statusCode {
+
+    NSRange redirectionRange = NSMakeRange(300, 100);
+    return NSLocationInRange(statusCode, redirectionRange);
+}
+
++ (BOOL)isClientError:(NSUInteger)statusCode {
+
+    NSRange clientErrorRange = NSMakeRange(400, 100);
+    return NSLocationInRange(statusCode, clientErrorRange);
+}
+
++ (BOOL)isServerError:(NSUInteger)statusCode {
+
+    NSRange serverErrorRange = NSMakeRange(500, 100);
+    return NSLocationInRange(statusCode, serverErrorRange);
+}
+
 @end

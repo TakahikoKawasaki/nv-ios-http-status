@@ -19,4 +19,10 @@
 
 @interface nv_ios_http_status : NSObject
 
++ (BOOL)isInformational:(NSUInteger)statusCode;
++ (BOOL)isSuccess:(NSUInteger)statusCode;
++ (BOOL)isRedirection:(NSUInteger)statusCode;
++ (BOOL)isClientError:(NSUInteger)statusCode;
++ (BOOL)isServerError:(NSUInteger)statusCode;
+
 @end
