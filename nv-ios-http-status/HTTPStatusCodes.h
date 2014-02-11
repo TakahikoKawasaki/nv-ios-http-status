@@ -578,5 +578,10 @@ typedef enum
 }
 HTTPStatusCode;
 
+int HTTPStatusCode_IsInformational(int statusCode);
+int HTTPStatusCode_IsSuccess(int statusCode);
+int HTTPStatusCode_IsRedirection(int statusCode);
+int HTTPStatusCode_IsClientError(int statusCode);
+int HTTPStatusCode_IsServerError(int statusCode);
 
 #endif

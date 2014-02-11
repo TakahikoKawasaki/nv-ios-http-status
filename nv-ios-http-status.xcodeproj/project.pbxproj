@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A909EAE01722B70D00D060E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A909EADF1722B70D00D060E1 /* Foundation.framework */; };
-		A909EAE51722B70D00D060E1 /* nv_ios_http_status.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A909EAE41722B70D00D060E1 /* nv_ios_http_status.h */; };
-		A909EAE71722B70D00D060E1 /* nv_ios_http_status.m in Sources */ = {isa = PBXBuildFile; fileRef = A909EAE61722B70D00D060E1 /* nv_ios_http_status.m */; };
+		CC6678E84A80A5104D03CB39 /* HTTPStatusCodes.c in Sources */ = {isa = PBXBuildFile; fileRef = CC6675EB40B0179DD5B5D270 /* HTTPStatusCodes.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +18,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				A909EAE51722B70D00D060E1 /* nv_ios_http_status.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,10 +26,9 @@
 /* Begin PBXFileReference section */
 		A909EADC1722B70D00D060E1 /* libnv-ios-http-status.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libnv-ios-http-status.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A909EADF1722B70D00D060E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A909EAE31722B70D00D060E1 /* nv-ios-http-status-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nv-ios-http-status-Prefix.pch"; sourceTree = "<group>"; };
-		A909EAE41722B70D00D060E1 /* nv_ios_http_status.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nv_ios_http_status.h; sourceTree = "<group>"; };
-		A909EAE61722B70D00D060E1 /* nv_ios_http_status.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nv_ios_http_status.m; sourceTree = "<group>"; };
-		A909EAED1722B8F700D060E1 /* HTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPStatusCodes.h; sourceTree = "<group>"; };
+		CC6673A64EA35CEEE64B6E98 /* HTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPStatusCodes.h; sourceTree = "<group>"; };
+		CC6675EB40B0179DD5B5D270 /* HTTPStatusCodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HTTPStatusCodes.c; sourceTree = "<group>"; };
+		CC66768CFF9C157BD9F219E4 /* nv-ios-http-status-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "nv-ios-http-status-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +46,6 @@
 		A909EAD31722B70D00D060E1 = {
 			isa = PBXGroup;
 			children = (
-				A909EAE11722B70D00D060E1 /* nv-ios-http-status */,
 				A909EADE1722B70D00D060E1 /* Frameworks */,
 				A909EADD1722B70D00D060E1 /* Products */,
 			);
@@ -59,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				A909EADC1722B70D00D060E1 /* libnv-ios-http-status.a */,
+				CC667D06464ADF1CB62DFD91 /* nv-ios-http-status */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,23 +68,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A909EAE11722B70D00D060E1 /* nv-ios-http-status */ = {
+		CC667650434E77CE44D1486F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A909EAED1722B8F700D060E1 /* HTTPStatusCodes.h */,
-				A909EAE41722B70D00D060E1 /* nv_ios_http_status.h */,
-				A909EAE61722B70D00D060E1 /* nv_ios_http_status.m */,
-				A909EAE21722B70D00D060E1 /* Supporting Files */,
-			);
-			path = "nv-ios-http-status";
-			sourceTree = "<group>";
-		};
-		A909EAE21722B70D00D060E1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A909EAE31722B70D00D060E1 /* nv-ios-http-status-Prefix.pch */,
+				CC66768CFF9C157BD9F219E4 /* nv-ios-http-status-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC667D06464ADF1CB62DFD91 /* nv-ios-http-status */ = {
+			isa = PBXGroup;
+			children = (
+				CC6673A64EA35CEEE64B6E98 /* HTTPStatusCodes.h */,
+				CC667650434E77CE44D1486F /* Supporting Files */,
+				CC6675EB40B0179DD5B5D270 /* HTTPStatusCodes.c */,
+			);
+			path = "nv-ios-http-status";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A909EAE71722B70D00D060E1 /* nv_ios_http_status.m in Sources */,
+				CC6678E84A80A5104D03CB39 /* HTTPStatusCodes.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

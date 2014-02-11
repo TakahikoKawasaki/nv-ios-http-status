@@ -15,7 +15,7 @@ was written based on the list at Wikipedia ([List of HTTP status codes]
 2013.
 
 Note that unofficial HTTP status codes are included and some of
-such variants can be excluded by defining HTTP_STATUS_CODES_EXLUCE_xxx.
+such variants can be excluded by defining HTTP_STATUS_CODES_EXCLUDE_xxx.
 
 
 License
